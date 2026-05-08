@@ -1,5 +1,5 @@
 # Delphoxalis
 
 Adds:
-A Netherite Mace
-Mosaic blocks for all wood types
+1. A Netherite Mace
+2. Mosaic blocks for all wood types
