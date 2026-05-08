@@ -1,0 +1,37 @@
+{
+	"schemaVersion": 1,
+	"id": "delphoxalis",
+	"version": "${version}",
+	"name": "Delphoxalis",
+	"description": "A mod that adds a little of everything...",
+	"authors": [
+		"Finnaware"
+	],
+	"contact": {
+		"homepage": "",
+		"sources": ""
+	},
+	"license": "CC0-1.0",
+	"icon": "assets/delphoxalis/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"net.finnaware.delphoxalis.Delphoxalis"
+		],
+		"fabric-datagen": [
+			"net.finnaware.delphoxalis.DelphoxalisDataGenerator"
+		],
+		"client": [
+			"net.finnaware.delphoxalis.DelphoxalisClient"
+		]
+	},
+	"mixins": [
+		"delphoxalis.mixins.json"
+	],
+	"depends": {
+		"fabricloader": ">=0.19.2",
+		"minecraft": "~1.21.1",
+		"java": ">=21",
+		"fabric-api": "*"
+	}
+}

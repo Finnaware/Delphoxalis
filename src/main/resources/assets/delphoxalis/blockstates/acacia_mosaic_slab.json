@@ -1,0 +1,13 @@
+{
+  "variants": {
+    "type=bottom": {
+      "model": "delphoxalis:block/acacia_mosaic_slab"
+    },
+    "type=double": {
+      "model": "delphoxalis:block/acacia_mosaic"
+    },
+    "type=top": {
+      "model": "delphoxalis:block/acacia_mosaic_slab_top"
+    }
+  }
+}

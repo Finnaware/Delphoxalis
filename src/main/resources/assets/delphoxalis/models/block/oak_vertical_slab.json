@@ -1,0 +1,6 @@
+{
+  "parent": "delphoxalis:block/vertical_slab",
+  "textures": {
+    "all": "minecraft:block/oak_planks"
+  }
+}

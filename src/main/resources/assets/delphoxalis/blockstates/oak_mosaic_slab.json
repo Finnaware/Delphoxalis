@@ -1,0 +1,13 @@
+{
+  "variants": {
+    "type=bottom": {
+      "model": "delphoxalis:block/oak_mosaic_slab"
+    },
+    "type=double": {
+      "model": "delphoxalis:block/oak_mosaic"
+    },
+    "type=top": {
+      "model": "delphoxalis:block/oak_mosaic_slab_top"
+    }
+  }
+}

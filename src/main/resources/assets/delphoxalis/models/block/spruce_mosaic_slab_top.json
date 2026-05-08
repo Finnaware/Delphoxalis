@@ -1,0 +1,8 @@
+{
+  "parent": "minecraft:block/slab_top",
+  "textures": {
+    "bottom": "delphoxalis:block/spruce_mosaic",
+    "side": "delphoxalis:block/spruce_mosaic",
+    "top": "delphoxalis:block/spruce_mosaic"
+  }
+}
