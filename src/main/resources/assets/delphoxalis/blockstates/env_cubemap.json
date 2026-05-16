@@ -1,0 +1,10 @@
+{
+  "variants": {
+    "waterlogged=false": {
+      "model": "delphoxalis:block/env_cubemap"
+    },
+    "waterlogged=true": {
+      "model": "delphoxalis:block/env_cubemap"
+    }
+  }
+}

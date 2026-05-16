@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:block/cube_all",
+  "textures": {
+    "all": "delphoxalis:block/dev_measure_2_orange"
+  }
+}

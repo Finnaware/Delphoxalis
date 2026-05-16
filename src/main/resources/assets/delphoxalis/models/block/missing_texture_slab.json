@@ -1,0 +1,8 @@
+{
+  "parent": "minecraft:block/slab",
+  "textures": {
+    "bottom": "delphoxalis:block/missing_texture",
+    "side": "delphoxalis:block/missing_texture",
+    "top": "delphoxalis:block/missing_texture"
+  }
+}

@@ -1,0 +1,7 @@
+{
+  "parent": "minecraft:block/cube_column",
+  "textures": {
+    "end": "delphoxalis:block/stripped_twilight_log",
+    "side": "delphoxalis:block/stripped_twilight_log"
+  }
+}

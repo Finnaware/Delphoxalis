@@ -1,0 +1,29 @@
+{
+  "format_version": "1.21.1",
+  "parent": "delphoxalis:item/large_bow_display",
+  "textures": {
+    "layer0": "delphoxalis:item/warbow"
+  },
+  "overrides": [
+    {
+      "predicate": {
+        "pulling": 1
+      },
+      "model": "delphoxalis:item/warbow_pulling_0"
+    },
+    {
+      "predicate": {
+        "pulling": 1,
+        "pull": 0.65
+      },
+      "model": "delphoxalis:item/warbow_pulling_1"
+    },
+    {
+      "predicate": {
+        "pulling": 1,
+        "pull": 0.9
+      },
+      "model": "delphoxalis:item/warbow_pulling_2"
+    }
+  ]
+}

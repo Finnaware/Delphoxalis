@@ -1,0 +1,16 @@
+{
+  "variants": {
+    "axis=x": {
+      "model": "delphoxalis:block/stripped_twilight_log",
+      "x": 90,
+      "y": 90
+    },
+    "axis=y": {
+      "model": "delphoxalis:block/stripped_twilight_log"
+    },
+    "axis=z": {
+      "model": "delphoxalis:block/stripped_twilight_log",
+      "x": 90
+    }
+  }
+}

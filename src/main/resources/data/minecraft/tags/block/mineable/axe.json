@@ -29,6 +29,47 @@
     "delphoxalis:spruce_mosaic_slab",
     "delphoxalis:warped_mosaic",
     "delphoxalis:warped_mosaic_stairs",
-    "delphoxalis:warped_mosaic_slab"
+    "delphoxalis:warped_mosaic_slab",
+    "delphoxalis:cut_acacia_planks",
+    "delphoxalis:cut_bamboo_planks",
+    "delphoxalis:cut_birch_planks",
+    "delphoxalis:cut_cherry_planks",
+    "delphoxalis:cut_crimson_planks",
+    "delphoxalis:cut_dark_oak_planks",
+    "delphoxalis:cut_jungle_planks",
+    "delphoxalis:cut_mangrove_planks",
+    "delphoxalis:cut_oak_planks",
+    "delphoxalis:cut_spruce_planks",
+    "delphoxalis:cut_twilight_planks",
+    "delphoxalis:cut_warped_planks",
+    "delphoxalis:twilight_log",
+    "delphoxalis:stripped_twilight_log",
+    "delphoxalis:twilight_wood",
+    "delphoxalis:stripped_twilight_wood",
+    "delphoxalis:twilight_planks",
+    "delphoxalis:twilight_stairs",
+    "delphoxalis:twilight_slab",
+    "delphoxalis:twilight_pressure_plate",
+    "delphoxalis:twilight_button",
+    "delphoxalis:twilight_trapdoor",
+    "delphoxalis:twilight_door",
+    "delphoxalis:twilight_fence",
+    "delphoxalis:twilight_fence_gate",
+    {
+      "id": "delphoxalis:pale_oak_mosaic",
+      "required": false
+    },
+    {
+      "id": "delphoxalis:pale_oak_mosaic_stairs",
+      "required": false
+    },
+    {
+      "id": "delphoxalis:pale_oak_mosaic_slab",
+      "required": false
+    },
+    {
+      "id": "delphoxalis:cut_pale_oak_planks",
+      "required": false
+    }
   ]
 }

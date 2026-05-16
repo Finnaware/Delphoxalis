@@ -1,0 +1,7 @@
+{
+  "format_version": "1.21.1",
+  "parent": "delphoxalis:item/large_bow_display",
+  "textures": {
+    "layer0": "delphoxalis:item/warbow_pulling_1"
+  }
+}

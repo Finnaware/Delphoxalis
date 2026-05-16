@@ -5,6 +5,11 @@
 	"mixins": [
 		"ExampleMixin"
 	],
+	"client": [
+		"CameraLockMixin",
+		"ClientWorldMixin",
+		"BowSlowdownMixin"
+	],
 	"injectors": {
 		"defaultRequire": 1
 	},

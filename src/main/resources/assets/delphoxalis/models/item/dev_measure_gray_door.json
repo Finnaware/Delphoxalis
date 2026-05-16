@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:item/generated",
+  "textures": {
+    "layer0": "delphoxalis:item/dev_measure_gray_door"
+  }
+}

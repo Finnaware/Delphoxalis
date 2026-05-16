@@ -1,0 +1,10 @@
+{
+  "variants": {
+    "powered=false": {
+      "model": "delphoxalis:block/twilight_pressure_plate"
+    },
+    "powered=true": {
+      "model": "delphoxalis:block/twilight_pressure_plate_down"
+    }
+  }
+}

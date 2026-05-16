@@ -1,0 +1,8 @@
+{
+  "parent": "minecraft:block/inner_stairs",
+  "textures": {
+    "bottom": "delphoxalis:block/twilight_planks",
+    "side": "delphoxalis:block/twilight_planks",
+    "top": "delphoxalis:block/twilight_planks"
+  }
+}

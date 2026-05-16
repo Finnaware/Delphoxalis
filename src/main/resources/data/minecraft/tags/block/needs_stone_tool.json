@@ -1,0 +1,15 @@
+{
+  "values": [
+    "delphoxalis:dev_measure_1_gray",
+    "delphoxalis:dev_measure_2_gray",
+    "delphoxalis:dev_measure_3_gray",
+    "delphoxalis:dev_measure_1_orange",
+    "delphoxalis:dev_measure_2_orange",
+    "delphoxalis:dev_measure_3_orange",
+    "delphoxalis:dev_measure_gray_door",
+    "delphoxalis:dev_measure_orange_door",
+    "delphoxalis:tile_floor",
+    "delphoxalis:tile_floor_stairs",
+    "delphoxalis:tile_floor_slab"
+  ]
+}

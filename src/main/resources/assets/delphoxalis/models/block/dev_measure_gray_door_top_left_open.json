@@ -1,0 +1,7 @@
+{
+  "parent": "minecraft:block/door_top_left_open",
+  "textures": {
+    "bottom": "delphoxalis:block/dev_measure_gray_door_bottom",
+    "top": "delphoxalis:block/dev_measure_gray_door_top"
+  }
+}

@@ -1,0 +1,13 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "building",
+  "ingredients": [
+    {
+      "tag": "delphoxalis:twilight_logs"
+    }
+  ],
+  "result": {
+    "count": 4,
+    "id": "delphoxalis:twilight_planks"
+  }
+}

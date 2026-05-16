@@ -1,0 +1,13 @@
+{
+  "variants": {
+    "type=bottom": {
+      "model": "delphoxalis:block/tile_floor_slab"
+    },
+    "type=double": {
+      "model": "delphoxalis:block/tile_floor"
+    },
+    "type=top": {
+      "model": "delphoxalis:block/tile_floor_slab_top"
+    }
+  }
+}
