@@ -55,6 +55,10 @@
     "delphoxalis:twilight_door",
     "delphoxalis:twilight_fence",
     "delphoxalis:twilight_fence_gate",
+    "delphoxalis:twilight_sign",
+    "delphoxalis:twilight_wall_sign",
+    "delphoxalis:twilight_hanging_sign",
+    "delphoxalis:twilight_wall_hanging_sign",
     {
       "id": "delphoxalis:pale_oak_mosaic",
       "required": false

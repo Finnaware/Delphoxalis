@@ -1,9 +1,9 @@
 package net.finnaware.delphoxalis.content;
 
 import net.finnaware.delphoxalis.Delphoxalis;
+import net.finnaware.delphoxalis.content.block.CubeMapBlock;
 import net.finnaware.delphoxalis.content.block.PlushBlock;
 import net.finnaware.delphoxalis.content.block.ScarletLeavesBlock;
-import net.finnaware.delphoxalis.content.block.CubeMapBlock;
 import net.finnaware.delphoxalis.world.tree.FoxSaplingGenerators;
 import net.minecraft.block.*;
 import net.minecraft.block.enums.NoteBlockInstrument;
@@ -18,92 +18,34 @@ import net.minecraft.util.Identifier;
 public class FoxBlocks {
 
     public static final Block ACACIA_MOSAIC = registerBlock("acacia_mosaic",
-            new Block(AbstractBlock.Settings.create()
-                    .strength(2F, 3F)
-                    .sounds(BlockSoundGroup.WOOD)
-                    .instrument(NoteBlockInstrument.BASS)
-                    .mapColor(MapColor.ORANGE)
-                    .burnable()
-            ));
+            new Block(AbstractBlock.Settings.copy(Blocks.ACACIA_PLANKS)));
 
     public static final Block BIRCH_MOSAIC = registerBlock("birch_mosaic",
-            new Block(AbstractBlock.Settings.create()
-                    .strength(2F, 3F)
-                    .sounds(BlockSoundGroup.WOOD)
-                    .instrument(NoteBlockInstrument.BASS)
-                    .mapColor(MapColor.PALE_YELLOW)
-                    .burnable()
-            ));
+            new Block(AbstractBlock.Settings.copy(Blocks.BIRCH_PLANKS)));
 
     public static final Block CHERRY_MOSAIC = registerBlock("cherry_mosaic",
-            new Block(AbstractBlock.Settings.create()
-                    .strength(2F, 3F)
-                    .sounds(BlockSoundGroup.CHERRY_WOOD)
-                    .instrument(NoteBlockInstrument.BASS)
-                    .mapColor(MapColor.TERRACOTTA_WHITE)
-                    .burnable()
-            ));
+            new Block(AbstractBlock.Settings.copy(Blocks.CHERRY_PLANKS)));
 
     public static final Block CRIMSON_MOSAIC = registerBlock("crimson_mosaic",
-            new Block(AbstractBlock.Settings.create()
-                    .strength(2F, 3F)
-                    .sounds(BlockSoundGroup.NETHER_WOOD)
-                    .instrument(NoteBlockInstrument.BASS)
-                    .mapColor(MapColor.DULL_PINK)
-            ));
+            new Block(AbstractBlock.Settings.copy(Blocks.CRIMSON_PLANKS)));
 
     public static final Block DARK_OAK_MOSAIC = registerBlock("dark_oak_mosaic",
-            new Block(AbstractBlock.Settings.create()
-                    .strength(2F, 3F)
-                    .sounds(BlockSoundGroup.WOOD)
-                    .instrument(NoteBlockInstrument.BASS)
-                    .mapColor(MapColor.BROWN)
-                    .burnable()
-            ));
+            new Block(AbstractBlock.Settings.copy(Blocks.DARK_OAK_PLANKS)));
 
     public static final Block JUNGLE_MOSAIC = registerBlock("jungle_mosaic",
-            new Block(AbstractBlock.Settings.create()
-                    .strength(2F, 3F)
-                    .sounds(BlockSoundGroup.WOOD)
-                    .instrument(NoteBlockInstrument.BASS)
-                    .mapColor(MapColor.DIRT_BROWN)
-                    .burnable()
-            ));
+            new Block(AbstractBlock.Settings.copy(Blocks.JUNGLE_PLANKS)));
 
     public static final Block MANGROVE_MOSAIC = registerBlock("mangrove_mosaic",
-            new Block(AbstractBlock.Settings.create()
-                    .strength(2F, 3F)
-                    .sounds(BlockSoundGroup.WOOD)
-                    .instrument(NoteBlockInstrument.BASS)
-                    .mapColor(MapColor.RED)
-                    .burnable()
-            ));
+            new Block(AbstractBlock.Settings.copy(Blocks.MANGROVE_PLANKS)));
 
     public static final Block OAK_MOSAIC = registerBlock("oak_mosaic",
-            new Block(AbstractBlock.Settings.create()
-                    .strength(2F, 3F)
-                    .sounds(BlockSoundGroup.WOOD)
-                    .instrument(NoteBlockInstrument.BASS)
-                    .mapColor(MapColor.OAK_TAN)
-                    .burnable()
-            ));
+            new Block(AbstractBlock.Settings.copy(Blocks.OAK_PLANKS)));
 
     public static final Block SPRUCE_MOSAIC = registerBlock("spruce_mosaic",
-            new Block(AbstractBlock.Settings.create()
-                    .strength(2F, 3F)
-                    .sounds(BlockSoundGroup.WOOD)
-                    .instrument(NoteBlockInstrument.BASS)
-                    .mapColor(MapColor.SPRUCE_BROWN)
-                    .burnable()
-            ));
+            new Block(AbstractBlock.Settings.copy(Blocks.SPRUCE_PLANKS)));
 
     public static final Block WARPED_MOSAIC = registerBlock("warped_mosaic",
-            new Block(AbstractBlock.Settings.create()
-                    .strength(2F, 3F)
-                    .sounds(BlockSoundGroup.NETHER_WOOD)
-                    .instrument(NoteBlockInstrument.BASS)
-                    .mapColor(MapColor.DARK_AQUA)
-            ));
+            new Block(AbstractBlock.Settings.copy(Blocks.WARPED_PLANKS)));
 
     // stairs
     public static final Block ACACIA_MOSAIC_STAIRS = registerBlock("acacia_mosaic_stairs",
@@ -179,43 +121,37 @@ public class FoxBlocks {
 
     // CUT PLANKS
     public static final Block CUT_ACACIA_PLANKS = registerBlock("cut_acacia_planks",
-            new Block(AbstractBlock.Settings.copy(ACACIA_MOSAIC)));
+            new Block(AbstractBlock.Settings.copy(Blocks.ACACIA_PLANKS)));
 
     public static final Block CUT_BIRCH_PLANKS = registerBlock("cut_birch_planks",
-            new Block(AbstractBlock.Settings.copy(BIRCH_MOSAIC)));
+            new Block(AbstractBlock.Settings.copy(Blocks.BIRCH_PLANKS)));
 
     public static final Block CUT_CHERRY_PLANKS = registerBlock("cut_cherry_planks",
-            new Block(AbstractBlock.Settings.copy(CHERRY_MOSAIC)));
+            new Block(AbstractBlock.Settings.copy(Blocks.CHERRY_PLANKS)));
 
     public static final Block CUT_CRIMSON_PLANKS = registerBlock("cut_crimson_planks",
-            new Block(AbstractBlock.Settings.copy(CRIMSON_MOSAIC)));
+            new Block(AbstractBlock.Settings.copy(Blocks.CRIMSON_PLANKS)));
 
     public static final Block CUT_DARK_OAK_PLANKS = registerBlock("cut_dark_oak_planks",
-            new Block(AbstractBlock.Settings.copy(DARK_OAK_MOSAIC)));
+            new Block(AbstractBlock.Settings.copy(Blocks.DARK_OAK_PLANKS)));
 
     public static final Block CUT_JUNGLE_PLANKS = registerBlock("cut_jungle_planks",
-            new Block(AbstractBlock.Settings.copy(JUNGLE_MOSAIC)));
+            new Block(AbstractBlock.Settings.copy(Blocks.JUNGLE_PLANKS)));
 
     public static final Block CUT_MANGROVE_PLANKS = registerBlock("cut_mangrove_planks",
-            new Block(AbstractBlock.Settings.copy(MANGROVE_MOSAIC)));
+            new Block(AbstractBlock.Settings.copy(Blocks.MANGROVE_PLANKS)));
 
     public static final Block CUT_OAK_PLANKS = registerBlock("cut_oak_planks",
-            new Block(AbstractBlock.Settings.copy(OAK_MOSAIC)));
+            new Block(AbstractBlock.Settings.copy(Blocks.OAK_PLANKS)));
 
     public static final Block CUT_SPRUCE_PLANKS = registerBlock("cut_spruce_planks",
-            new Block(AbstractBlock.Settings.copy(SPRUCE_MOSAIC)));
+            new Block(AbstractBlock.Settings.copy(Blocks.SPRUCE_PLANKS)));
 
     public static final Block CUT_WARPED_PLANKS = registerBlock("cut_warped_planks",
-            new Block(AbstractBlock.Settings.copy(WARPED_MOSAIC)));
+            new Block(AbstractBlock.Settings.copy(Blocks.WARPED_PLANKS)));
 
     public static final Block CUT_BAMBOO_PLANKS = registerBlock("cut_bamboo_planks",
-            new Block(AbstractBlock.Settings.create()
-                    .strength(2F, 3F)
-                    .sounds(BlockSoundGroup.BAMBOO_WOOD)
-                    .instrument(NoteBlockInstrument.BASS)
-                    .mapColor(MapColor.YELLOW)
-                    .burnable()
-            ));
+            new Block(AbstractBlock.Settings.copy(Blocks.BAMBOO_PLANKS)));
 
     public static final Block DEV_MEASURE_1_GRAY = registerBlock("dev_measure_1_gray",
             new Block(AbstractBlock.Settings.create()
@@ -226,7 +162,7 @@ public class FoxBlocks {
             ));
 
     public static final Block DEV_MEASURE_GRAY_DOOR = registerBlock("dev_measure_gray_door",
-            new DoorBlock(BlockSetType.OAK, (AbstractBlock.Settings.copy(DEV_MEASURE_1_GRAY))));
+            new DoorBlock(BlockSetType.STONE, (AbstractBlock.Settings.copy(DEV_MEASURE_1_GRAY))));
 
     public static final Block DEV_MEASURE_2_GRAY = registerBlock("dev_measure_2_gray",
             new Block(AbstractBlock.Settings.copy(DEV_MEASURE_1_GRAY)));
@@ -243,7 +179,7 @@ public class FoxBlocks {
             ));
 
     public static final Block DEV_MEASURE_ORANGE_DOOR = registerBlock("dev_measure_orange_door",
-            new DoorBlock(BlockSetType.OAK, (AbstractBlock.Settings.copy(DEV_MEASURE_1_ORANGE))));
+            new DoorBlock(BlockSetType.STONE, (AbstractBlock.Settings.copy(DEV_MEASURE_1_ORANGE))));
 
     public static final Block DEV_MEASURE_2_ORANGE = registerBlock("dev_measure_2_orange",
             new Block(AbstractBlock.Settings.copy(DEV_MEASURE_1_ORANGE)));
@@ -286,7 +222,7 @@ public class FoxBlocks {
                     .strength(2F, 3F)
                     .sounds(BlockSoundGroup.CHERRY_WOOD)
                     .instrument(NoteBlockInstrument.BASS)
-                    .mapColor(MapColor.BLUE)
+                    .mapColor(MapColor.LIGHT_BLUE)
                     .burnable()
             ));
 
@@ -298,7 +234,7 @@ public class FoxBlocks {
                     .strength(2F, 3F)
                     .sounds(BlockSoundGroup.CHERRY_WOOD)
                     .instrument(NoteBlockInstrument.BASS)
-                    .mapColor(MapColor.BLUE)
+                    .mapColor(MapColor.LIGHT_BLUE)
                     .burnable()
             ));
 
@@ -310,7 +246,7 @@ public class FoxBlocks {
                     .strength(2F, 3F)
                     .sounds(BlockSoundGroup.CHERRY_WOOD)
                     .instrument(NoteBlockInstrument.BASS)
-                    .mapColor(MapColor.BLUE)
+                    .mapColor(MapColor.LIGHT_BLUE)
                     .burnable()
             ));
 
@@ -322,36 +258,56 @@ public class FoxBlocks {
                     (AbstractBlock.Settings.copy(TWILIGHT_PLANKS))));
 
     public static final Block TWILIGHT_PRESSURE_PLATE = registerBlock("twilight_pressure_plate",
-            new PressurePlateBlock(BlockSetType.CHERRY, AbstractBlock.Settings.copy(TWILIGHT_PLANKS)
+            new PressurePlateBlock(FoxWoodTypes.TWILIGHT_BLOCK_SET, AbstractBlock.Settings.copy(TWILIGHT_PLANKS)
                     .solid()
                     .noCollision()
                     .pistonBehavior(PistonBehavior.DESTROY)
             ));
 
     public static final Block TWILIGHT_BUTTON = registerBlock("twilight_button",
-            new ButtonBlock(BlockSetType.CHERRY, 30,AbstractBlock.Settings.copy(TWILIGHT_PLANKS)
+            new ButtonBlock(FoxWoodTypes.TWILIGHT_BLOCK_SET, 30, AbstractBlock.Settings.copy(TWILIGHT_PLANKS)
                     .solid()
                     .noCollision()
                     .pistonBehavior(PistonBehavior.DESTROY)
             ));
 
     public static final Block TWILIGHT_TRAPDOOR = registerBlock("twilight_trapdoor",
-            new TrapdoorBlock(BlockSetType.CHERRY, AbstractBlock.Settings.copy(TWILIGHT_PLANKS)
+            new TrapdoorBlock(FoxWoodTypes.TWILIGHT_BLOCK_SET, AbstractBlock.Settings.copy(TWILIGHT_PLANKS)
                     .nonOpaque()
                     .pistonBehavior(PistonBehavior.DESTROY)
             ));
 
     public static final Block TWILIGHT_DOOR = registerBlock("twilight_door",
-            new DoorBlock(BlockSetType.CHERRY,AbstractBlock.Settings.copy(TWILIGHT_PLANKS)
+            new DoorBlock(FoxWoodTypes.TWILIGHT_BLOCK_SET, AbstractBlock.Settings.copy(TWILIGHT_PLANKS)
                     .nonOpaque()
                     .pistonBehavior(PistonBehavior.DESTROY)
             ));
 
     public static final Block TWILIGHT_FENCE_GATE = registerBlock("twilight_fence_gate",
-            new FenceGateBlock(WoodType.CHERRY,AbstractBlock.Settings.copy(TWILIGHT_PLANKS)));
+            new FenceGateBlock(FoxWoodTypes.TWILIGHT_WOOD, AbstractBlock.Settings.copy(TWILIGHT_PLANKS)));
 
     public static final Block TWILIGHT_FENCE = registerBlock("twilight_fence",
             new FenceBlock(AbstractBlock.Settings.copy(TWILIGHT_PLANKS)));
+
+    public static final Block TWILIGHT_SIGN = registerBlockWithoutBlockItem("twilight_sign",
+            new SignBlock(FoxWoodTypes.TWILIGHT_WOOD, AbstractBlock.Settings.create()
+                    .mapColor(MapColor.LIGHT_BLUE)
+                    .solid()
+                    .instrument(NoteBlockInstrument.BASS)
+                    .noCollision()
+                    .strength(1.0F)
+                    .burnable()
+            )
+    );
+
+    public static final Block TWILIGHT_WALL_SIGN = registerBlockWithoutBlockItem("twilight_wall_sign",
+            new WallSignBlock(FoxWoodTypes.TWILIGHT_WOOD, AbstractBlock.Settings.copy(FoxBlocks.TWILIGHT_SIGN)));
+
+    public static final Block TWILIGHT_HANGING_SIGN = registerBlockWithoutBlockItem("twilight_hanging_sign",
+            new HangingSignBlock(FoxWoodTypes.TWILIGHT_WOOD, AbstractBlock.Settings.copy(FoxBlocks.TWILIGHT_SIGN)));
+
+    public static final Block TWILIGHT_WALL_HANGING_SIGN = registerBlockWithoutBlockItem("twilight_wall_hanging_sign",
+            new WallHangingSignBlock(FoxWoodTypes.TWILIGHT_WOOD, AbstractBlock.Settings.copy(FoxBlocks.TWILIGHT_SIGN)));
 
     public static final Block TWILIGHT_MOSAIC = registerBlock("twilight_mosaic",
             new Block(AbstractBlock.Settings.copy(TWILIGHT_PLANKS)));
@@ -395,6 +351,9 @@ public class FoxBlocks {
                             .pistonBehavior(PistonBehavior.DESTROY)
             ));
 
+    public static final Block POTTED_SCARLET_SAPLING = registerBlock("potted_scarlet_sapling",
+            new FlowerPotBlock(SCARLET_SAPLING, AbstractBlock.Settings.copy(Blocks.POTTED_DANDELION)));
+
     public static final Block ENV_CUBEMAP = registerBlock("env_cubemap",
             new CubeMapBlock(
                     AbstractBlock.Settings.create()
@@ -425,6 +384,10 @@ public class FoxBlocks {
         Registry.register(Registries.ITEM, Identifier.of(Delphoxalis.MOD_ID, name),
                 new BlockItem(block, new Item.Settings())
         );
+    }
+
+    public static Block registerBlockWithoutBlockItem(String name, Block block) {
+        return Registry.register(Registries.BLOCK, Identifier.of(Delphoxalis.MOD_ID, name), block);
     }
 
     public static void registerFoxBlocks() {

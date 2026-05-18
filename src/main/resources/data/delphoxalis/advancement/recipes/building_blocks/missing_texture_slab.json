@@ -1,0 +1,32 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_missing_texture": {
+      "conditions": {
+        "items": [
+          {
+            "items": "delphoxalis:missing_texture"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_the_recipe": {
+      "conditions": {
+        "recipe": "delphoxalis:missing_texture_slab"
+      },
+      "trigger": "minecraft:recipe_unlocked"
+    }
+  },
+  "requirements": [
+    [
+      "has_the_recipe",
+      "has_missing_texture"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "delphoxalis:missing_texture_slab"
+    ]
+  }
+}

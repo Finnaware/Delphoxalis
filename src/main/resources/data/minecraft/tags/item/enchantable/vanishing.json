@@ -1,6 +1,9 @@
 {
   "values": [
     "delphoxalis:netherite_mace",
-    "delphoxalis:warbow"
+    {
+      "id": "delphoxalis:warbow",
+      "required": false
+    }
   ]
 }

@@ -1,0 +1,20 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+  "key": {
+    "B": {
+      "item": "minecraft:black_concrete"
+    },
+    "P": {
+      "item": "minecraft:magenta_concrete"
+    }
+  },
+  "pattern": [
+    "PB",
+    "BP"
+  ],
+  "result": {
+    "count": 4,
+    "id": "delphoxalis:missing_texture"
+  }
+}

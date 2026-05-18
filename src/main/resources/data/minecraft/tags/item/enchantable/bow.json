@@ -1,5 +1,8 @@
 {
   "values": [
-    "delphoxalis:warbow"
+    {
+      "id": "delphoxalis:warbow",
+      "required": false
+    }
   ]
 }

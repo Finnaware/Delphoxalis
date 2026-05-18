@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+  "key": {
+    "S": {
+      "item": "minecraft:smooth_stone"
+    },
+    "N": {
+      "item": "minecraft:terracotta"
+    }
+  },
+  "pattern": [
+    "NNN",
+    "NSN",
+    "NNN"
+  ],
+  "result": {
+    "count": 8,
+    "id": "delphoxalis:dev_measure_1_orange"
+  }
+}

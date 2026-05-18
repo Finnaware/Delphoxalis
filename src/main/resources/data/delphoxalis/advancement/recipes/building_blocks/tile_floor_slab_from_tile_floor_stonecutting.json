@@ -1,0 +1,22 @@
+﻿{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_the_recipe": {
+      "conditions": {
+        "recipe": "delphoxalis:tile_floor_slab_from_tile_floor_stonecutting"
+      },
+      "trigger": "minecraft:recipe_unlocked"
+    }
+  },
+  "requirements": [
+    [
+      "has_the_recipe"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "delphoxalis:tile_floor_slab_from_tile_floor_stonecutting"
+    ]
+  }
+}
+

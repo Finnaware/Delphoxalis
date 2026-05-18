@@ -3,18 +3,20 @@ package net.finnaware.delphoxalis.content;
 import net.fabricmc.fabric.api.registry.FuelRegistry;
 import net.fabricmc.loader.api.FabricLoader;
 import net.finnaware.delphoxalis.Delphoxalis;
+import net.finnaware.delphoxalis.compat.rangedweaponapi.RWCompatItems;
 import net.finnaware.delphoxalis.compat.vanillabackport.VBCompatBlocks;
 import net.minecraft.item.ItemConvertible;
 
 public class FoxFuel {
     private static final String VANILLA_BACKPORT = "vanillabackport";
+    private static final String RANGED_WEAPON_API = "ranged_weapon_api";
 
-    private static final int WOOD_BURN_TIME = 300;
-    private static final int WOOD_DOOR_BURN_TIME = 200;
-    private static final int WOOD_BUTTON_BURN_TIME = 100;
-    private static final int WOOD_SLAB_BURN_TIME = 150;
+    private static final int ONE_AND_HALF_BURN_TIME = 300;
+    private static final int ONE_BURN_TIME = 200;
+    private static final int HALF_BURN_TIME = 100;
+    private static final int THREE_QUARTERS_BURN_TIME = 150;
 
-    private static final ItemConvertible[] WOOD_BLOCKS = {
+    private static final ItemConvertible[] ONE_AND_HALF_ITEMS = {
             FoxBlocks.ACACIA_MOSAIC,
             FoxBlocks.BIRCH_MOSAIC,
             FoxBlocks.CHERRY_MOSAIC,
@@ -43,7 +45,6 @@ public class FoxFuel {
             FoxBlocks.OAK_MOSAIC_STAIRS,
             FoxBlocks.SPRUCE_MOSAIC_STAIRS,
             FoxBlocks.TWILIGHT_MOSAIC_STAIRS,
-            FoxItems.WARBOW,
             FoxBlocks.CUT_ACACIA_PLANKS,
             FoxBlocks.CUT_BIRCH_PLANKS,
             FoxBlocks.CUT_CHERRY_PLANKS,
@@ -55,15 +56,17 @@ public class FoxFuel {
             FoxBlocks.CUT_TWILIGHT_PLANKS
     };
 
-    private static final ItemConvertible[] WOOD_DOORS = {
+    private static final ItemConvertible[] ONE_ITEMS = {
             FoxBlocks.TWILIGHT_DOOR,
+            FoxItems.TWILIGHT_SIGN,
+            FoxItems.TWILIGHT_HANGING_SIGN
     };
 
-    private static final ItemConvertible[] WOOD_BUTTONS = {
+    private static final ItemConvertible[] HALF_ITEMS = {
             FoxBlocks.TWILIGHT_BUTTON,
     };
 
-    private static final ItemConvertible[] WOOD_SLABS = {
+    private static final ItemConvertible[] THREE_QUARTERS_ITEMS = {
             FoxBlocks.ACACIA_MOSAIC_SLAB,
             FoxBlocks.BIRCH_MOSAIC_SLAB,
             FoxBlocks.CHERRY_MOSAIC_SLAB,
@@ -77,11 +80,12 @@ public class FoxFuel {
     };
 
     public static void registerFoxFuel() {
-        registerFuel(WOOD_BURN_TIME, WOOD_BLOCKS);
+        registerFuel(ONE_AND_HALF_BURN_TIME, ONE_AND_HALF_ITEMS);
         registerVanillaBackportFuel();
-        registerFuel(WOOD_DOOR_BURN_TIME, WOOD_DOORS);
-        registerFuel(WOOD_BUTTON_BURN_TIME, WOOD_BUTTONS);
-        registerFuel(WOOD_SLAB_BURN_TIME, WOOD_SLABS);
+        registerRangedWeaponAPIFuel();
+        registerFuel(ONE_BURN_TIME, ONE_ITEMS);
+        registerFuel(HALF_BURN_TIME, HALF_ITEMS);
+        registerFuel(THREE_QUARTERS_BURN_TIME, THREE_QUARTERS_ITEMS);
 
         Delphoxalis.LOGGER.info("Registering Fuels for " + Delphoxalis.MOD_ID);
     }
@@ -91,13 +95,23 @@ public class FoxFuel {
             return;
         }
 
-        registerFuel(WOOD_BURN_TIME,
+        registerFuel(ONE_AND_HALF_BURN_TIME,
                 VBCompatBlocks.PALE_OAK_MOSAIC,
                 VBCompatBlocks.PALE_OAK_MOSAIC_STAIRS,
                 VBCompatBlocks.CUT_PALE_OAK_PLANKS
         );
-        registerFuel(WOOD_SLAB_BURN_TIME,
+        registerFuel(THREE_QUARTERS_BURN_TIME,
                 VBCompatBlocks.PALE_OAK_MOSAIC_SLAB
+        );
+    }
+
+    private static void registerRangedWeaponAPIFuel() {
+        if (!FabricLoader.getInstance().isModLoaded(RANGED_WEAPON_API)) {
+            return;
+        }
+
+        registerFuel(ONE_AND_HALF_BURN_TIME,
+                RWCompatItems.WARBOW
         );
     }
 

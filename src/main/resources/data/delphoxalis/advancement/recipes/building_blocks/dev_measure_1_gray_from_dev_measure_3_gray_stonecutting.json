@@ -1,0 +1,32 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_dev_measure_3_gray": {
+      "conditions": {
+        "items": [
+          {
+            "items": "delphoxalis:dev_measure_3_gray"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_the_recipe": {
+      "conditions": {
+        "recipe": "delphoxalis:dev_measure_1_gray_from_dev_measure_3_gray_stonecutting"
+      },
+      "trigger": "minecraft:recipe_unlocked"
+    }
+  },
+  "requirements": [
+    [
+      "has_the_recipe",
+      "has_dev_measure_3_gray"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "delphoxalis:dev_measure_1_gray_from_dev_measure_3_gray_stonecutting"
+    ]
+  }
+}

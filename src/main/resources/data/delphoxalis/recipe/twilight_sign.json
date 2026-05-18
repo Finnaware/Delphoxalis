@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "decorations",
+  "key": {
+    "#": {
+      "item": "minecraft:stick"
+    },
+    "W": {
+      "item": "delphoxalis:twilight_planks"
+    }
+  },
+  "pattern": [
+    "WWW",
+    "WWW",
+    " # "
+  ],
+  "result": {
+    "count": 3,
+    "id": "delphoxalis:twilight_sign"
+  }
+}

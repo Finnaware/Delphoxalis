@@ -1,6 +1,7 @@
 package net.finnaware.delphoxalis.mixin;
 
-import net.finnaware.delphoxalis.content.FoxItems;
+import net.fabricmc.loader.api.FabricLoader;
+import net.finnaware.delphoxalis.compat.rangedweaponapi.RWCompatItems;
 import net.minecraft.client.network.ClientPlayerEntity;
 import org.spongepowered.asm.mixin.Mixin;
 import org.spongepowered.asm.mixin.Unique;
@@ -14,7 +15,10 @@ public class BowSlowdownMixin {
 
     @ModifyConstant(method = "tickMovement", constant = @Constant(floatValue = 0.2F))
     private float delphoxalis$slowWarbowUseMovement(float original) {
+        if (!FabricLoader.getInstance().isModLoaded("ranged_weapon_api")) {
+            return original;
+        }
         ClientPlayerEntity player = (ClientPlayerEntity)(Object)this;
-        return player.getActiveItem().isOf(FoxItems.WARBOW) ? WARBOW_MOVEMENT_MULTIPLIER : original;
+        return player.getActiveItem().isOf(RWCompatItems.WARBOW) ? WARBOW_MOVEMENT_MULTIPLIER : original;
     }
 }

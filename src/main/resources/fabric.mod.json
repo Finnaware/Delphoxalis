@@ -35,6 +35,7 @@
 		"fabric-api": "*"
 	},
 	"suggests": {
-		"vanillabackport": "*"
+		"vanillabackport": "*",
+		"ranged_weapon_api": "*"
 	}
 }

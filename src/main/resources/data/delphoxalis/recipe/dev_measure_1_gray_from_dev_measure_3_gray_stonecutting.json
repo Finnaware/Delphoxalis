@@ -1,0 +1,11 @@
+{
+  "type": "minecraft:stonecutting",
+  "category": "building",
+  "ingredient": {
+    "item": "delphoxalis:dev_measure_3_gray"
+  },
+  "result": {
+    "count": 1,
+    "id": "delphoxalis:dev_measure_1_gray"
+  }
+}

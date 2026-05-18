@@ -3,6 +3,7 @@ package net.finnaware.delphoxalis.content;
 import net.fabricmc.fabric.api.itemgroup.v1.FabricItemGroup;
 import net.fabricmc.loader.api.FabricLoader;
 import net.finnaware.delphoxalis.Delphoxalis;
+import net.finnaware.delphoxalis.compat.rangedweaponapi.RWCompatItems;
 import net.finnaware.delphoxalis.compat.vanillabackport.VBCompatBlocks;
 import net.minecraft.item.ItemGroup;
 import net.minecraft.item.ItemStack;
@@ -16,11 +17,13 @@ public class FoxItemGroups {
     public static final ItemGroup DELPHOXALIS_ITEM_GROUP = Registry.register(Registries.ITEM_GROUP,
             Identifier.of(Delphoxalis.MOD_ID, "delphoxalis_items"),
             FabricItemGroup.builder()
-                    .icon(() -> new ItemStack(FoxItems.NETHERITE_MACE))
+                    .icon(() -> new ItemStack(FoxBlocks.SCARLET_SAPLING))
                     .displayName(Text.translatable("itemgroup.delphoxalis.delphoxalis_items"))
                     .entries((displayContext, entries) -> {
                         entries.add(FoxItems.NETHERITE_MACE);
-                        entries.add(FoxItems.WARBOW);
+                        if (FabricLoader.getInstance().isModLoaded("ranged_weapon_api")) {
+                            entries.add(RWCompatItems.WARBOW);
+                        }
                         entries.add(FoxItems.PRODUCT_KEY);
                         entries.add(FoxBlocks.ENV_CUBEMAP);
                         entries.add(FoxBlocks.ROUTER_PLUSH);
@@ -93,15 +96,17 @@ public class FoxItemGroups {
                         entries.add(FoxBlocks.TWILIGHT_PLANKS);
                         entries.add(FoxBlocks.TWILIGHT_STAIRS);
                         entries.add(FoxBlocks.TWILIGHT_SLAB);
+                        entries.add(FoxBlocks.TWILIGHT_MOSAIC);
+                        entries.add(FoxBlocks.TWILIGHT_MOSAIC_STAIRS);
+                        entries.add(FoxBlocks.TWILIGHT_MOSAIC_SLAB);
                         entries.add(FoxBlocks.TWILIGHT_PRESSURE_PLATE);
                         entries.add(FoxBlocks.TWILIGHT_BUTTON);
                         entries.add(FoxBlocks.TWILIGHT_TRAPDOOR);
                         entries.add(FoxBlocks.TWILIGHT_DOOR);
                         entries.add(FoxBlocks.TWILIGHT_FENCE);
                         entries.add(FoxBlocks.TWILIGHT_FENCE_GATE);
-                        entries.add(FoxBlocks.TWILIGHT_MOSAIC);
-                        entries.add(FoxBlocks.TWILIGHT_MOSAIC_STAIRS);
-                        entries.add(FoxBlocks.TWILIGHT_MOSAIC_SLAB);
+                        entries.add(FoxItems.TWILIGHT_SIGN);
+                        entries.add(FoxItems.TWILIGHT_HANGING_SIGN);
                         entries.add(FoxBlocks.SCARLET_LEAVES);
                         entries.add(FoxBlocks.SCARLET_SAPLING);
                     }).build()

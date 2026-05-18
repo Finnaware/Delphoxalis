@@ -1,0 +1,20 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+  "key": {
+    "W": {
+      "item": "minecraft:white_concrete"
+    },
+    "B": {
+      "item": "minecraft:black_concrete"
+    }
+  },
+  "pattern": [
+    "WB",
+    "BW"
+  ],
+  "result": {
+    "count": 4,
+    "id": "delphoxalis:tile_floor"
+  }
+}

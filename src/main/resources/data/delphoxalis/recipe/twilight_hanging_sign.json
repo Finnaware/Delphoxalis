@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "decorations",
+  "key": {
+    "#": {
+      "item": "minecraft:chain"
+    },
+    "W": {
+      "item": "delphoxalis:stripped_twilight_log"
+    }
+  },
+  "pattern": [
+    "# #",
+    "WWW",
+    "WWW"
+  ],
+  "result": {
+    "count": 6,
+    "id": "delphoxalis:twilight_hanging_sign"
+  }
+}

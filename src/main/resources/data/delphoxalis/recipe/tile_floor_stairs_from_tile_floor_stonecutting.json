@@ -1,0 +1,11 @@
+{
+  "type": "minecraft:stonecutting",
+  "category": "building",
+  "ingredient": {
+    "item": "delphoxalis:tile_floor"
+  },
+  "result": {
+    "count": 1,
+    "id": "delphoxalis:tile_floor_stairs"
+  }
+}
