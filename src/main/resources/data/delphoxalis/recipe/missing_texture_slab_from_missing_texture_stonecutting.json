@@ -2,10 +2,10 @@
   "type": "minecraft:stonecutting",
   "category": "building",
   "ingredient": {
-    "item": "delphoxalis:missing_texture_stairs"
+    "item": "delphoxalis:missing_texture"
   },
   "result": {
-    "count": 1,
+    "count": 2,
     "id": "delphoxalis:missing_texture_slab"
   }
 }

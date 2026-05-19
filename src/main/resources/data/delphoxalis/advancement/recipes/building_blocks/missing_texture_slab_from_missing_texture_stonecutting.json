@@ -13,7 +13,7 @@
     },
     "has_the_recipe": {
       "conditions": {
-        "recipe": "delphoxalis:missing_texture_slab_from_missing_texture_stairs_stonecutting"
+        "recipe": "delphoxalis:missing_texture_slab_from_missing_texture_stonecutting"
       },
       "trigger": "minecraft:recipe_unlocked"
     }
